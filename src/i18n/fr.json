@@ -1,0 +1,32 @@
+{
+  "presentation": {
+   
+  },
+
+  "about": {
+    "about": "À propos",
+    "description": "Je suis passioné de technologies basé dans le sud de la France. J'ai commencé comme testeur fonctionnel, puis testeur automaticien et maintenant développeur freelance. Autodidacte, j'ai eu la chance de travailler dans des domaines variés comme la défense et le handicap. J'aime créer et apporter des solutions à des problèmes complexes.  Proactif, j'aime essayer de nouvelles choses et varier les technologies.",
+    "skills": "Compétences",
+    "skillsTitle": {
+      "development": "Développement",
+      "qa": "QA",
+      "others": "Autres"
+    }
+  },
+
+  "contact": {
+    "contact": "Contact",
+    "description":"Vous pouvez me contacter de préférence pour des opportunités en freelance. Pour toute autre question, n'hésitez pas.",
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "subject": "Sujet",
+      "message": "Message",
+      "send": "Envoyer",
+      "errorRequired": "Ce champ est obligatoire"
+    },
+    "messageSent": "Le message a été envoyé avec succès !",
+    "messageError": "Erreur : le message n'a pas été envoyé"
+  }
+
+}

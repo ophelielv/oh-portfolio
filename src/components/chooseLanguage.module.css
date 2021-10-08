@@ -1,0 +1,67 @@
+
+.container {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  font-size: 1.4rem;
+  color: white;
+}
+
+.languages {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  padding: 3rem 4rem;
+  font-size: 1.4rem;
+  color: white;
+}
+
+.languages button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+  color: white;
+  transition: color 0.4s;
+}
+
+.languages button.selected {
+  color: yellow;
+}
+
+.languages button:active, 
+.languages button:focus, 
+.languages button:hover  {
+  color: orange;
+}
+
+.languages span {
+  margin: 0 1rem;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 600px) {
+  .languages button {
+    font-size: 0.9rem;
+  }
+  .languages {
+    padding: 3rem 1rem;
+  }
+  .languages span {
+    font-size: 0.9rem;
+  }
+  
+  .container {
+    display: flex;
+    padding: 0 0.5rem;
+    align-items: center;
+  }
+  .links a img {
+    width: 20px;
+  }
+}

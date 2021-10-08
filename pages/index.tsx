@@ -1,11 +1,12 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Core from '../components/core'
-import Project from '../components/project'
-import Section from '../components/section'
-import Skills from '../components/skills'
+import Core from '../src/components/core'
+import Project from '../src/components/project'
+import Section from '../src/components/section'
+import Skills from '../src/components/skills'
 import styles from '../styles/Home.module.css'
-
+import Contact from '../src/components/contact'
+import ChooseLanguage from '../src/components/chooseLanguage'
 
 const frontSkills = [ 
   'Javascript (ES5+)', 'React', 'React Native', 'SQL', 
@@ -32,6 +33,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <Section backgroundName="wave-1-sky-crust.svg" backgroundAlt="Ciel et croûte terrestre">
+          <ChooseLanguage />
           <h1 className={styles.title}>
             Ophélie Le Vigouroux Front-end developer
           </h1>
@@ -77,6 +79,7 @@ const Home: NextPage = () => {
         
         <Section backgroundName="wave-5-crust-sky.svg" backgroundAlt="Croûte terrestre et ciel">  
           <h2 className={styles.light}>Contact</h2>
+          <Contact />
         </Section> 
       </main>
     </div>

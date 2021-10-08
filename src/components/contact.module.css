@@ -1,0 +1,145 @@
+div.contact {
+  background: rgba(6, 85, 138, 0.39);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.form {
+  padding: 1rem 3rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 4;
+  width: 60vw;
+}
+
+.form .row {
+  display: flex;
+}
+
+.form .inputRow {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0.4rem;
+  flex-grow: 1;
+}
+
+.form label {
+  font-size: 1rem;
+  margin-top: 0.4rem;
+}
+
+.form label:before {
+  content: '*';
+  color: red;
+  margin-right: 2px;
+}
+
+.form label:after {
+  content: ':';
+  color: white;
+  margin-left: 2px;
+}
+
+.form span.errorRequired {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-bottom: 0.6rem;
+}
+
+.form input, .form textarea {
+  padding: 0.5rem 0.8rem;
+  margin: 0.4rem 0rem;
+  border: 1px solid rgba(36, 36, 36, 0.425);
+  border-radius: 6px;
+}
+
+.form button[type='submit'] {
+  margin: 1rem 0;
+  padding: 0.6rem 0;
+  border-radius: 20px;
+  background-color: rgb(36, 12, 12);
+  border: 2px solid rgba(36, 36, 36, 0.425);
+  color: white;
+  transition: color 0.4s, background-color 0.4s, box-shadow 0.4s, border 0.2s;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+section.contact h2 {
+  font-size: 2.4rem;
+  margin: 0;
+}
+
+p.messageSuccess, p.messageError {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+p.messageSuccess {
+  color: rgb(0, 145, 12);
+}
+
+p.messageError {
+  color: #750000;
+}
+
+@media (max-width: 900px) {
+  .form .row {
+    flex-direction: column;
+  }
+  .form {
+    width: 80vw;
+  }
+  section.contact p {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  section.contact {
+    padding: 0.4rem;
+    justify-content: space-evenly;
+  }
+  section.contact h2 {
+    font-size: 1.6rem;
+    margin: 0.4rem
+  }
+  section.contact p.description {
+    width: 100%;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+  }
+  .form {
+    padding: 0.4rem;
+    margin: 0;
+    width: 90vw;
+  }
+  .form label {
+    font-size: 0.7rem;
+    margin-top: 0.2rem;
+  }
+  .form input, .form textarea {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.8rem;
+    margin: 0.4rem 0rem;
+  }
+  .form span.errorRequired {
+    font-size: 0.7rem;
+    margin-bottom: 0.2rem;
+  }
+  .form button[type='submit'] {
+    margin: 0.5rem 0;
+    padding: 0.3rem 0;
+    font-size: 0.8rem;
+  } 
+  p.messageSuccess, p.messageError {
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+  }
+}

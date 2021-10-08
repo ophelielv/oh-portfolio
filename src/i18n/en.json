@@ -1,0 +1,30 @@
+{
+  "presentation": {
+  },
+
+  "about": {
+    "about": "About",
+    "description": "I am a technologies enthousiast living in the south of France. I started as a functionnal tester, then automated tester and now I am a freelance web developer. Self-taught, I had the chance to work in various sectors such as military and handicap. I love fixing issues and problem solving. Proactive, I love trying new things and vary technologies.",
+    "skills": "Skills",
+    "skillsTitle": {
+      "development": "Development",
+      "qa": "QA",
+      "others": "Others"
+    }
+  },
+
+  "contact": {
+    "contact": "Contact",
+    "description":"You can contact me for freelance opportunities. Other questions, don’t hesitate.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send",
+      "errorRequired": "This field is required"
+    },
+    "messageSent": "The message has been sent succesfully !",
+    "messageError": "Error : the message has not been sent"
+  }
+}
