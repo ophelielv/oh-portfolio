@@ -4,11 +4,20 @@
 div.skills {
   z-index: 2;
   padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 div.skills h2 {
   text-align: center;
-  font-size: 2.4rem
+}
+
+p.description {
+  max-width: 900px;
+  text-align: center;
+  line-height: 1.6rem;
 }
 
 div.row {
