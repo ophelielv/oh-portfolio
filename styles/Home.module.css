@@ -20,6 +20,10 @@ p.description {
   line-height: 1.6rem;
 }
 
+h2.contactTitle {
+  text-shadow: -20px -15px 3px #0c0c0cc2;
+}
+
 div.row {
   display: flex;
   justify-content: space-evenly;

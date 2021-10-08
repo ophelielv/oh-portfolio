@@ -1,5 +1,6 @@
 import styles from './project.module.css'
 import Image from 'next/image'
+import { useTranslation } from 'react-i18next'
 
 export default function Project({
   title,
@@ -12,6 +13,7 @@ export default function Project({
   imgName: string,
   imgAlt: string,
 }){
+  const { t } = useTranslation()
   return (
     <div className={styles.container}>
 
@@ -28,7 +30,7 @@ export default function Project({
       <div className={styles.texts}>
         <h3>{title}</h3>
         <p>{description}</p>
-        <a href="" target="_blank" className={styles.link}>Voir</a>
+        <a href="" target="_blank" className={styles.link}>{t('projects.buttonSee')}</a>
       </div>
 
     </div>

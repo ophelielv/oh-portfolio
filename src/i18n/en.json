@@ -4,12 +4,31 @@
 
   "about": {
     "about": "About",
-    "description": "I am a technologies enthousiast living in the south of France. I started as a functionnal tester, then automated tester and now I am a freelance web developer. Self-taught, I had the chance to work in various sectors such as military and handicap. I love fixing issues and problem solving. Proactive, I love trying new things and vary technologies.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec mauris porta, elementum elit vel, porttitor velit. Nulla porttitor, sapien at egestas dictum, lorem metus pharetra mi, sed euismod turpis felis vitae nisi. In euismod, mauris vel faucibus facilisis, magna dui sollicitudin tortor."
+  },
+
+  "skills": {
     "skills": "Skills",
-    "skillsTitle": {
-      "development": "Development",
-      "qa": "QA",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec mauris porta, elementum elit vel, porttitor velit. Nulla porttitor, sapien at egestas dictum, lorem metus pharetra mi, sed euismod turpis felis vitae nisi. In euismod, mauris vel faucibus facilisis, magna dui sollicitudin tortor.",
+    "title": {
+      "front": "Front-end",
+      "back": "Back-end",
       "others": "Others"
+    }
+  },
+
+  "projects": {
+    "projects": "Projects",
+    "buttonSee": "See",
+    "p1": {
+      "title": "CSS Art",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec mauris porta, elementum elit vel, porttitor velit. Nulla porttitor, sapien at egestas dictum, lorem metus pharetra mi, sed euismod turpis felis vitae nisi. In euismod, mauris vel faucibus facilisis, magna dui sollicitudin tortor.",
+      "imgAlt": "Hamilton street"
+    },
+    "p2": {
+      "title": "Web application",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec mauris porta, elementum elit vel, porttitor velit. Nulla porttitor, sapien at egestas dictum, lorem metus pharetra mi, sed euismod turpis felis vitae nisi. In euismod, mauris vel faucibus facilisis, magna dui sollicitudin tortor.",
+      "imgAlt": "Koala's notebook"
     }
   },
 

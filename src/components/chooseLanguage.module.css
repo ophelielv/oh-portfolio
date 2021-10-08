@@ -1,8 +1,8 @@
 
 .container {
-  z-index: 1;
-  position: absolute;
-  top: 0;
+  /* z-index: 1; */
+  position: absolute; 
+  bottom: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -28,6 +28,7 @@
   font-size: 1.4rem;
   color: white;
   transition: color 0.4s;
+  text-shadow: -20px 15px 3px #0c0c0cc2;;
 }
 
 .languages button.selected {

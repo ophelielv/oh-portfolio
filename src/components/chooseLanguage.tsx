@@ -2,7 +2,6 @@ import styles from './chooseLanguage.module.css'
 import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Language } from '../i18n/i18n'
-import Image from 'next/image'
 
 export default function ChooseLanguage() {
   const { i18n } = useTranslation();
