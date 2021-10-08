@@ -7,6 +7,7 @@ import Skills from '../src/components/skills'
 import styles from '../styles/Home.module.css'
 import Contact from '../src/components/contact'
 import ChooseLanguage from '../src/components/chooseLanguage'
+import { useTranslation } from 'react-i18next'
 
 const frontSkills = [ 
   'Javascript (ES5+)', 'React', 'React Native', 'SQL', 
@@ -23,6 +24,7 @@ const otherSkills = [
 ]
 
 const Home: NextPage = () => {
+  const { t } = useTranslation()
   return (
     <div className={styles.container}>
       <Head>
@@ -33,52 +35,52 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <Section backgroundName="wave-1-sky-crust.svg" backgroundAlt="Ciel et croûte terrestre">
-          <ChooseLanguage />
           <h1 className={styles.title}>
             Ophélie Le Vigouroux Front-end developer
           </h1>
+          <ChooseLanguage />
         </Section>
 
         <Section backgroundName="wave-2-crust-magma.svg" backgroundAlt="Croûte terrestre et magma">
-          <h2 className={styles.light}>À propos</h2>
+          <h2 className={styles.light}>{t('about.about')}</h2>
           <p className={`${styles.light} ${styles.description}`}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec mauris porta, elementum elit vel, porttitor velit. Nulla porttitor, sapien at egestas dictum, lorem metus pharetra mi, sed euismod turpis felis vitae nisi. In euismod, mauris vel faucibus facilisis, magna dui sollicitudin tortor.
+            {t('about.description')}
           </p>
         </Section>
 
         <Section backgroundName="wave-3-magma-core-magma.svg" backgroundAlt="Magma, noyau et magma">  
           <Core />
           <div className={styles.skills}>
-            <h2 className={styles.dark}>Compétences</h2>
+            <h2 className={styles.dark}>{t('skills.skills')}</h2>
             <p className={`${styles.dark} ${styles.description}`}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec mauris porta, elementum elit vel, porttitor velit. Nulla porttitor, sapien at egestas dictum, lorem metus pharetra mi, sed euismod turpis felis vitae nisi. In euismod, mauris vel faucibus facilisis, magna dui sollicitudin tortor.
+              {t('skills.description')}
             </p>
             <div className={styles.row}>
-              <Skills title="Front" skills={frontSkills} />
-              <Skills title="Back" skills={backSkils} />
-              <Skills title="Autres" skills={otherSkills} />
+              <Skills title={t('skills.title.front')} skills={frontSkills} />
+              <Skills title={t('skills.title.back')} skills={backSkils} />
+              <Skills title={t('skills.title.others')} skills={otherSkills} />
             </div>
           </div>
         </Section> 
 
         <Section backgroundName="wave-4-magma-crust.svg" backgroundAlt="Magma et croûte terrestre">
-          <h2 className={styles.light}>Projects</h2>
+          <h2 className={styles.light}>{t('projects.projects')}</h2>
           <Project 
-            title="CSS Art"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec mauris porta, elementum elit vel, porttitor velit. Nulla porttitor, sapien at egestas dictum, lorem metus pharetra mi, sed euismod turpis felis vitae nisi. In euismod, mauris vel faucibus facilisis, magna dui sollicitudin tortor."
+            title={t('projects.p1.title')}
+            description={t('projects.p1.description')}
             imgName="hamilton-street.JPG"
-            imgAlt="Hamilton street"
+            imgAlt={t('projects.p1.imgAlt')}
           />
           <Project 
-            title="Web application"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec mauris porta, elementum elit vel, porttitor velit. Nulla porttitor, sapien at egestas dictum, lorem metus pharetra mi, sed euismod turpis felis vitae nisi. In euismod, mauris vel faucibus facilisis, magna dui sollicitudin tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec mauris porta, elementum elit vel, porttitor velit. Nulla porttitor, sapien at egestas dictum, lorem metus pharetra mi, sed euismod turpis felis vitae nisi. In euismod, mauris vel faucibus facilisis, magna dui sollicitudin tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec mauris porta, elementum elit vel, porttitor velit. Nulla porttitor, sapien at egestas dictum, lorem metus pharetra mi, sed euismod turpis felis vitae nisi. In euismod, mauris vel faucibus facilisis, magna dui sollicitudin tortor."
+            title={t('projects.p2.title')}
+            description={t('projects.p2.description')}
             imgName="koala's-notebook.JPG"
-            imgAlt="Koala's notebook"
+            imgAlt={t('projects.p2.imgAlt')}
           />
         </Section>  
         
         <Section backgroundName="wave-5-crust-sky.svg" backgroundAlt="Croûte terrestre et ciel">  
-          <h2 className={styles.light}>Contact</h2>
+          <h2 className={`${styles.light} ${styles.contactTitle}`}>Contact</h2>
           <Contact />
         </Section> 
       </main>
