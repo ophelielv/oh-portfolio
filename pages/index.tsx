@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
+import Section from '../components/section'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -13,79 +13,44 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <section className={styles.presentation}>
-          <Image
-            src="/svg/wave-1-sky-crust.svg"
-            alt="Ciel et croûte terrestre"
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center"
-            className={styles.backgroundImage}
-          />  
-          <div className={styles.content}>
-            <h1 className={styles.title}>
-              Ophélie Le Vigouroux Front-end developer
-            </h1>
-          </div>
-        </section>
+        <Section
+          backgroundName="wave-1-sky-crust.svg"
+          backgroundAlt="Ciel et croûte terrestre"
+        >
+          <h1 className={styles.title}>
+            Ophélie Le Vigouroux Front-end developer
+          </h1>
+        </Section>
 
-        <section className={styles.about}>
-          <Image
-            src="/svg/wave-2-crust-magma.svg"
-            alt="Croûte terrestre et magma"
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center"
-            className={styles.backgroundImage}
-          />  
-          <div className={styles.content}>
-            <h2>À propos</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec mauris porta, elementum elit vel, porttitor velit. Nulla porttitor, sapien at egestas dictum, lorem metus pharetra mi, sed euismod turpis felis vitae nisi. In euismod, mauris vel faucibus facilisis, magna dui sollicitudin tortor.</p>
-          </div>
-        </section>
+        <Section
+          backgroundName="wave-2-crust-magma.svg"
+          backgroundAlt="Croûte terrestre et magma"
+        >
+          <h2 className={styles.light}>À propos</h2>
+          <p className={styles.light}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec mauris porta, elementum elit vel, porttitor velit. Nulla porttitor, sapien at egestas dictum, lorem metus pharetra mi, sed euismod turpis felis vitae nisi. In euismod, mauris vel faucibus facilisis, magna dui sollicitudin tortor.</p>
+        </Section>
 
-        <section className={styles.skills}>
-          <Image
-            src="/svg/wave-3-magma-core-magma.svg"
-            alt="Magma, noyau et magma"
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center"
-            className={styles.backgroundImage}
-          />  
-          <div className={styles.content}>
-            <h2>Compétences</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec mauris porta, elementum elit vel, porttitor velit. Nulla porttitor, sapien at egestas dictum, lorem metus pharetra mi, sed euismod turpis felis vitae nisi. In euismod, mauris vel faucibus facilisis, magna dui sollicitudin tortor.</p>
-          </div>
-        </section>
+        <Section
+          backgroundName="wave-3-magma-core-magma.svg"
+          backgroundAlt="Magma, noyau et magma"
+        >  
+          <h2 className={styles.dark}>Compétences</h2>
+          <p className={styles.dark}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec mauris porta, elementum elit vel, porttitor velit. Nulla porttitor, sapien at egestas dictum, lorem metus pharetra mi, sed euismod turpis felis vitae nisi. In euismod, mauris vel faucibus facilisis, magna dui sollicitudin tortor.</p>
+        </Section> 
 
-        <section className={styles.projects}>
-          <Image
-            src="/svg/wave-5-magma-crust.svg"
-            alt="Magma et croûte terrestre"
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center"
-            className={styles.backgroundImage}
-          />  
-          <div className={styles.content}>
-            <h2>Projects</h2>
-          </div>
-        </section>
-
-        <section className={styles.contact}>
-          <Image
-            src="/svg/wave-6-crust-sky.svg"
-            alt="Croûte terrestre et ciel"
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center"
-            className={styles.backgroundImage}
-          />  
-          <div className={styles.content}>
-            <h2>Contact</h2>
-          </div>
-        </section>
+        <Section
+          backgroundName="wave-5-magma-crust.svg"
+          backgroundAlt="Magma et croûte terrestre"
+          >
+            <h2 className={styles.light}>Projects</h2>
+        </Section>  
+        
+        <Section
+          backgroundName="wave-6-crust-sky.svg"
+          backgroundAlt="Croûte terrestre et ciel"
+        >  
+         <h2 className={styles.light}>Contact</h2>
+        </Section> 
 
       </main>
     </div>

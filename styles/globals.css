@@ -16,9 +16,10 @@ a {
   box-sizing: border-box;
 }
 
-section {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  border: 1px solid white;
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
