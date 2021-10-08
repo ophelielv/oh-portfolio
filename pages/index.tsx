@@ -6,7 +6,7 @@ import Skills from '../components/skills'
 import styles from '../styles/Home.module.css'
 
 
-const frontSkills = [
+const frontSkills = [ 
   'Javascript (ES5+)', 'React', 'React Native', 'SQL', 
   'HTML5', 'CSS3', 'Mocha', 'Chai', 'Next.js', 'react-spring',
   'Webpack', 'Yarn',
@@ -54,11 +54,11 @@ const Home: NextPage = () => {
           </div>
         </Section> 
 
-        <Section backgroundName="wave-5-magma-crust.svg" backgroundAlt="Magma et croûte terrestre">
+        <Section backgroundName="wave-4-magma-crust.svg" backgroundAlt="Magma et croûte terrestre">
           <h2 className={styles.light}>Projects</h2>
         </Section>  
         
-        <Section backgroundName="wave-6-crust-sky.svg" backgroundAlt="Croûte terrestre et ciel">  
+        <Section backgroundName="wave-5-crust-sky.svg" backgroundAlt="Croûte terrestre et ciel">  
           <h2 className={styles.light}>Contact</h2>
         </Section> 
       </main>

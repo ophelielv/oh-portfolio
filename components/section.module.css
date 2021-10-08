@@ -2,7 +2,6 @@ section.section {
   width: 100vw;
   min-height: 100vh;
   position: relative;
-  border: 1px solid white;
 }
 
 .content {

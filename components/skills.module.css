@@ -1,10 +1,17 @@
 /* Skill */
 p.skill {
-  background: rgb(214, 73, 8);
+  background-color: rgb(214, 73, 8);
   padding: 0.2rem 1rem;
   margin: 0.5rem 0.4rem 0.5rem 0;
   border-radius: 2px;
-  color: white
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+p.skill:hover{
+  background-color: white;
+  color: rgb(214, 73, 8);
 }
 
 /* Skills */
