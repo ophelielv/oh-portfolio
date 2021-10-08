@@ -6,17 +6,19 @@ section.section {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
+
 
 .content {
   position: absolute;
   display: flex;
   padding: 2rem 4rem;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: center; 
   height: 100%;
   width: 100%;
   max-width: 2040px;
 }
+
+.content.center { justify-content: center; }
+.content.start { justify-content: flex-start; }

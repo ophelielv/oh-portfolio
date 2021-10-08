@@ -8,7 +8,7 @@ const trans = (x: number, y: number) =>
 
 export default function Core() {
   const [trail, api] = useTrail(3, () => ({
-    xy: [0, 0],
+    xy: [300, 300],
     config: slow, 
   }))
   

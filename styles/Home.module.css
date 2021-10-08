@@ -10,6 +10,10 @@ div.skills {
   align-items: center;
 }
 
+h1.title {
+  opacity: 0;
+}
+
 div.skills h2 {
   text-align: center;
 }

@@ -8,6 +8,7 @@ import styles from '../styles/Home.module.css'
 import Contact from '../src/components/contact'
 import ChooseLanguage from '../src/components/chooseLanguage'
 import { useTranslation } from 'react-i18next'
+import TitleAnimation from '../src/components/titleAnimation'
 
 const frontSkills = [ 
   'Javascript (ES5+)', 'React', 'React Native', 'SQL', 
@@ -34,21 +35,34 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <Section backgroundName="wave-1-sky-crust.svg" backgroundAlt="Ciel et croûte terrestre">
+        <Section 
+          backgroundName="wave-1-sky-crust.svg" 
+          backgroundAlt="Ciel et croûte terrestre"
+          position="center"
+        >
+          <TitleAnimation />
           <h1 className={styles.title}>
             Ophélie Le Vigouroux Front-end developer
           </h1>
           <ChooseLanguage />
         </Section>
 
-        <Section backgroundName="wave-2-crust-magma.svg" backgroundAlt="Croûte terrestre et magma">
+        <Section 
+          backgroundName="wave-2-crust-magma.svg" 
+          backgroundAlt="Croûte terrestre et magma"
+          position="center"
+        >
           <h2 className={styles.light}>{t('about.about')}</h2>
           <p className={`${styles.light} ${styles.description}`}>
             {t('about.description')}
           </p>
         </Section>
 
-        <Section backgroundName="wave-3-magma-core-magma.svg" backgroundAlt="Magma, noyau et magma">  
+        <Section 
+          backgroundName="wave-3-magma-core-magma.svg" 
+          backgroundAlt="Magma, noyau et magma"
+          position="center"
+        >  
           <Core />
           <div className={styles.skills}>
             <h2 className={styles.dark}>{t('skills.skills')}</h2>
@@ -63,7 +77,11 @@ const Home: NextPage = () => {
           </div>
         </Section> 
 
-        <Section backgroundName="wave-4-magma-crust.svg" backgroundAlt="Magma et croûte terrestre">
+        <Section 
+          backgroundName="wave-4-magma-crust.svg" 
+          backgroundAlt="Magma et croûte terrestre"
+          position="start"
+        >
           <h2 className={styles.light}>{t('projects.projects')}</h2>
           <Project 
             title={t('projects.p1.title')}
@@ -79,7 +97,11 @@ const Home: NextPage = () => {
           />
         </Section>  
         
-        <Section backgroundName="wave-5-crust-sky.svg" backgroundAlt="Croûte terrestre et ciel">  
+        <Section 
+          backgroundName="wave-5-crust-sky.svg" 
+          backgroundAlt="Croûte terrestre et ciel"
+          position="start"
+        >  
           <h2 className={`${styles.light} ${styles.contactTitle}`}>Contact</h2>
           <Contact />
         </Section> 
