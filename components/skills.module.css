@@ -1,0 +1,41 @@
+/* Skill */
+p.skill {
+  background: rgb(214, 73, 8);
+  padding: 0.2rem 1rem;
+  margin: 0.5rem 0.4rem 0.5rem 0;
+  border-radius: 2px;
+  color: white
+}
+
+/* Skills */
+div.category {
+  max-width: 30%;
+}
+
+div.category h3 {
+  font-size: 1.4rem;
+  margin: 0.5rem 0;
+}
+
+div.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 800px) {
+  div.category {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  p.skill {
+    padding: 0.2rem 0.2rem;
+    margin: 0.2rem 0.4rem 0.2rem 0;
+    font-size: 0.7rem;
+  }
+  div.category h3 {
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+  }
+}
