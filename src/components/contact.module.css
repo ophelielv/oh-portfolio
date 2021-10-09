@@ -69,6 +69,12 @@ div.contact {
   font-weight: 700;
   font-size: 1.1rem;
 }
+.form button[type='submit']:hover,
+.form button[type='submit']:active,
+.form button[type='submit']:focus {
+  background-color: rgb(6, 85, 138);
+  border: 2px solid rgb(6, 85, 138);
+}
 
 section.contact h2 {
   font-size: 2.4rem;

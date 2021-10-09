@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Image from 'next/image'
 import Core from '../src/components/core'
 import Project from '../src/components/project'
 import Section from '../src/components/section'
@@ -36,15 +37,26 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <Section 
-          backgroundName="wave-1-sky-crust.svg" 
+          backgroundName="wave-1-sky-crust-1.svg" 
           backgroundAlt="Ciel et croûte terrestre"
           position="center"
         >
           <TitleAnimation />
-          <h1 className={styles.title}>
+          <h1 className={styles.hiddenTitle}>
             Ophélie Le Vigouroux Front-end developer
           </h1>
-          <ChooseLanguage />
+          <div className={styles.presentationContainer}>
+            <ChooseLanguage />
+            <div className={styles.treeImgContainer}>
+              <Image 
+                src="/images/tree.svg" 
+                layout="fill"
+                objectFit="contain"
+                objectPosition="center"
+                alt="tree"
+              />
+            </div> 
+          </div> 
         </Section>
 
         <Section 
@@ -98,10 +110,17 @@ const Home: NextPage = () => {
         </Section>  
         
         <Section 
-          backgroundName="wave-5-crust-sky.svg" 
+          backgroundName="wave-5-crust-sky-1.svg" 
           backgroundAlt="Croûte terrestre et ciel"
-          position="start"
+          position="center"
         >  
+          <div className={styles.koalaImgContainer}>
+            <Image 
+              src="/images/koala1.svg" 
+              width={200} height={200} 
+              alt="Koala"
+            />
+          </div>
           <h2 className={`${styles.light} ${styles.contactTitle}`}>Contact</h2>
           <Contact />
         </Section> 

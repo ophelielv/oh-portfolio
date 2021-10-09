@@ -20,24 +20,21 @@ export default function ChooseLanguage() {
         break
     }
   }
-
   return (
     <div className={styles.container}>
-      <div className={styles.languages}>
         <button 
           className={lang === Language.EN ? styles.selected : ''}
           onClick={() => changeLanguage(Language.EN)}
-          >
+        >
           English
         </button> 
         <span>|</span>
         <button 
           className={lang === Language.FR ? styles.selected : ''}
           onClick={() => changeLanguage(Language.FR)}
-          >
+        >
           Français
         </button>
-      </div>
     </div>
   )
 }

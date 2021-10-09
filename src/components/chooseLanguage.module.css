@@ -1,26 +1,13 @@
-
 .container {
-  position: absolute; 
-  bottom: 0;
-  width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem 4rem;
-  font-size: 1.4rem;
-  color: white;
-}
-
-.languages {
-  display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: baseline;
-  padding: 3rem 4rem;
+  padding: 4rem;
   font-size: 1rem;
   color: white;
 }
 
-.languages button {
+.container button {
   background: none;
   border: none;
   cursor: pointer;
@@ -30,36 +17,30 @@
   text-shadow: -20px 15px 3px #0c0c0cc2;
 }
 
-.languages button.selected {
+.container button.selected {
   color: #ffe739;
 }
 
-.languages button:active, 
-.languages button:focus, 
-.languages button:hover  {
-  color: #0d7967;
+.container button:active, 
+.container button:focus, 
+.container button:hover  {
+  color: #ffd13a /* vert cyprès #0d7967*/;
 }
 
-.languages span {
+.container span {
   margin: 0 1rem;
   font-size: 1.4rem;
 }
 
 @media (max-width: 600px) {
-  .languages button {
+  .container button {
     font-size: 0.9rem;
   }
-  .languages {
+  .container {
     padding: 3rem 1rem;
   }
-  .languages span {
+  .container span {
     font-size: 0.9rem;
-  }
-  
-  .container {
-    display: flex;
-    padding: 0 0.5rem;
-    align-items: center;
   }
   .links a img {
     width: 20px;
