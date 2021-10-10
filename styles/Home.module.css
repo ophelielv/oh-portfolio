@@ -1,5 +1,59 @@
+/* *** ******************************************** *** */
+/* *** ******************************************** *** */
+/* *** Shared between sections                      *** */
+/* *** ******************************************** *** */
 .light { color: white; }
 .dark { color: black; }
+
+p.description {
+  max-width: 900px;
+  text-align: center;
+  line-height: 1.6rem;
+}
+
+/* *** ******************************************** *** */
+/* *** Sections                                     *** */
+/* *** ******************************************** *** */
+/* *** Présentation *** */
+h1.hiddenTitle {
+  opacity: 0;
+}
+
+.presentationContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+}
+
+.presentationContainer .treeImgContainer {
+  position: relative;
+  height: 75vh;
+  max-height: 700px;
+  width: 75vw;
+  max-width: 700px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 600px) {
+  .presentationContainer {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .presentationContainer .treeImgContainer {
+    margin-bottom: 0px;
+    bottom: 0;
+  }
+}
+
+/* *** Skills *** */
+div.skills h2 {
+  text-align: center;
+}
 
 div.skills {
   z-index: 2;
@@ -10,33 +64,10 @@ div.skills {
   align-items: center;
 }
 
-h1.hiddenTitle {
-  opacity: 0;
-}
-
-.presentationContainer {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  position: absolute;
-  bottom: 0;
-}
-
-div.skills h2 {
-  text-align: center;
-}
-
-p.description {
-  max-width: 900px;
-  text-align: center;
-  line-height: 1.6rem;
-}
-
+/* *** Contact *** */
 h2.contactTitle {
   text-shadow: -20px -15px 3px #0c0c0cc2;
 }
-
 div.row {
   display: flex;
   justify-content: space-evenly;
@@ -62,12 +93,3 @@ div.row {
   box-shadow: -6px 0px 10px 16px #000000a1;
 }
 
-.treeImgContainer {
-  position: relative;
-  height: 50vw;
-  width: 40vw;
-}
-
-@media (max-width: 600px) {
-
-}

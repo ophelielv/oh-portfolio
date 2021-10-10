@@ -28,9 +28,9 @@
   justify-content: center;
 }
 
-@media (min-width: 601px) and (max-width: 800px) {
+@media (max-width: 800px) {
   .transitionsItem {
-    font-size: 2.6rem;
+    font-size: 2.0rem;
     line-height: 2rem;
   }
 }
@@ -39,5 +39,20 @@
   .transitionsItem {
     font-size: 1.6rem;
     line-height: 1rem;
+  }
+  
+  .container {
+    align-items: flex-end;
+  }
+}
+
+@media (max-width: 370px) {
+  .transitionsItem {
+    font-size: 1.2rem;
+    line-height: 1rem;
+  }
+  
+  .container {
+    align-items: flex-end;
   }
 }

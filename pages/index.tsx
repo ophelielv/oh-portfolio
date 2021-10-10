@@ -51,8 +51,8 @@ const Home: NextPage = () => {
               <Image 
                 src="/images/tree.svg" 
                 layout="fill"
-                objectFit="contain"
-                objectPosition="center"
+                objectFit="cover"
+                objectPosition="left"
                 alt="tree"
               />
             </div> 
