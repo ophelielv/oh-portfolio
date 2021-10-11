@@ -1,0 +1,27 @@
+h2.contactTitle {
+  text-shadow: -20px -15px 3px #0c0c0cc2;
+}
+div.row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.koalaImgContainer {
+  transform: rotateX(180deg) rotateY(0deg); 
+  position: absolute;
+  top: 100px;
+  left: 30px;
+}
+
+.koalaImgContainer:before {
+  content: '';
+  height: 15px;
+  width: 115px;
+  background-color: #000000a1;
+  border-radius: 25px;
+  position: absolute;
+  bottom: 32px;
+  right: 49px;
+  transform: skew(18deg, 0deg);
+  box-shadow: -6px 0px 10px 16px #000000a1;
+}

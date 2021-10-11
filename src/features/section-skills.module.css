@@ -1,0 +1,14 @@
+div.skills h2 {
+  text-align: center;
+}
+
+div.skills {
+  z-index: 2;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark { color: black; }

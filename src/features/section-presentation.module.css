@@ -1,0 +1,34 @@
+h1.hiddenTitle {
+  opacity: 0;
+}
+
+.presentationContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+}
+
+.presentationContainer .treeImgContainer {
+  position: relative;
+  height: 75vh;
+  max-height: 700px;
+  width: 75vw;
+  max-width: 700px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 600px) {
+  .presentationContainer {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .presentationContainer .treeImgContainer {
+    margin-bottom: 0px;
+    bottom: 0;
+  }
+}

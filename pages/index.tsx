@@ -1,29 +1,12 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
-import Core from '../src/components/core'
-import Project from '../src/components/project'
 import Section from '../src/components/section'
-import Skills from '../src/components/skills'
 import styles from '../styles/Home.module.css'
-import Contact from '../src/components/contact'
-import ChooseLanguage from '../src/components/chooseLanguage'
 import { useTranslation } from 'react-i18next'
-import TitleAnimation from '../src/components/titleAnimation'
-
-const frontSkills = [ 
-  'Javascript (ES5+)', 'React', 'React Native', 'SQL', 
-  'HTML5', 'CSS3', 'Mocha', 'Chai', 'Next.js', 'react-spring',
-  'Webpack', 'Yarn',
-]
-const backSkils = [
-  'Symfony', 'Php', 'Node.js', 'Express.js', 'Firebase', 
-  'Symfony', 'Php', 'Node.js', 'Express.js', 'Firebase'
-]
-const otherSkills = [
-  'Git', 'Jira', 'Git',
-  'Jira', 'Git'
-]
+import PresentationSection from '../src/features/section-presentation'
+import SkillsSection from '../src/features/section-skills'
+import ProjectsSection from '../src/features/section-projects'
+import ContactSection from '../src/features/section-contact'
 
 const Home: NextPage = () => {
   const { t } = useTranslation()
@@ -41,22 +24,7 @@ const Home: NextPage = () => {
           backgroundAlt="Ciel et croûte terrestre"
           position="center"
         >
-          <TitleAnimation />
-          <h1 className={styles.hiddenTitle}>
-            Ophélie Le Vigouroux Front-end developer
-          </h1>
-          <div className={styles.presentationContainer}>
-            <ChooseLanguage />
-            <div className={styles.treeImgContainer}>
-              <Image 
-                src="/images/tree.svg" 
-                layout="fill"
-                objectFit="cover"
-                objectPosition="left"
-                alt="tree"
-              />
-            </div> 
-          </div> 
+          <PresentationSection />
         </Section>
 
         <Section 
@@ -75,18 +43,7 @@ const Home: NextPage = () => {
           backgroundAlt="Magma, noyau et magma"
           position="center"
         >  
-          <Core />
-          <div className={styles.skills}>
-            <h2 className={styles.dark}>{t('skills.skills')}</h2>
-            <p className={`${styles.dark} ${styles.description}`}>
-              {t('skills.description')}
-            </p>
-            <div className={styles.row}>
-              <Skills title={t('skills.title.front')} skills={frontSkills} />
-              <Skills title={t('skills.title.back')} skills={backSkils} />
-              <Skills title={t('skills.title.others')} skills={otherSkills} />
-            </div>
-          </div>
+          <SkillsSection />
         </Section> 
 
         <Section 
@@ -94,19 +51,7 @@ const Home: NextPage = () => {
           backgroundAlt="Magma et croûte terrestre"
           position="start"
         >
-          <h2 className={styles.light}>{t('projects.projects')}</h2>
-          <Project 
-            title={t('projects.p1.title')}
-            description={t('projects.p1.description')}
-            imgName="hamilton-street.JPG"
-            imgAlt={t('projects.p1.imgAlt')}
-          />
-          <Project 
-            title={t('projects.p2.title')}
-            description={t('projects.p2.description')}
-            imgName="koala's-notebook.JPG"
-            imgAlt={t('projects.p2.imgAlt')}
-          />
+          <ProjectsSection />
         </Section>  
         
         <Section 
@@ -114,15 +59,7 @@ const Home: NextPage = () => {
           backgroundAlt="Croûte terrestre et ciel"
           position="center"
         >  
-          <div className={styles.koalaImgContainer}>
-            <Image 
-              src="/images/koala1.svg" 
-              width={200} height={200} 
-              alt="Koala"
-            />
-          </div>
-          <h2 className={`${styles.light} ${styles.contactTitle}`}>Contact</h2>
-          <Contact />
+          <ContactSection />
         </Section> 
       </main>
     </div>
