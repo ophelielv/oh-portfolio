@@ -8,6 +8,7 @@ import SkillsSection from '../src/features/section-skills'
 import ProjectsSection from '../src/features/section-projects'
 import ContactSection from '../src/features/section-contact'
 import initFirebase from '../src/firebase/initFirebase'
+import AboutSection from '../src/features/section-about'
 
 initFirebase()
 
@@ -35,10 +36,7 @@ const Home: NextPage = () => {
           backgroundAlt="Croûte terrestre et magma"
           position="center"
         >
-          <h2 className={styles.light}>{t('about.about')}</h2>
-          <p className={`${styles.light} ${styles.description}`}>
-            {t('about.description')}
-          </p>
+          <AboutSection />
         </Section>
 
         <Section 

@@ -15,8 +15,8 @@ export default function ChooseLanguage() {
         break
       case Language.EN:
       default:
-        setLang(Language.EN)
-        i18n.changeLanguage(Language.EN)
+        setLang(Language.FR)
+        i18n.changeLanguage(Language.FR)
         break
     }
   }
