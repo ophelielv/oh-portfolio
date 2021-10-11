@@ -1,3 +1,10 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 h2.contactTitle {
   text-shadow: -20px -15px 3px #0c0c0cc2;
 }
@@ -26,4 +33,12 @@ p.description {
   right: 49px;
   transform: skew(18deg, 0deg);
   box-shadow: -6px 0px 10px 16px #000000a1;
+}
+
+@media (max-width: 600px) {
+  .koalaImgContainer {
+    position: static;
+    width: 180px;
+    height: 180px;
+  }
 }

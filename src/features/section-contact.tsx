@@ -4,7 +4,7 @@ import Contact from '../components/contact'
 
 export default function ContactSection () {
   return (
-    <>
+    <div className={styles.container}>
       <div className={styles.koalaImgContainer}>
         <Image 
           src="/images/koala1.svg" 
@@ -14,6 +14,6 @@ export default function ContactSection () {
       </div>
       <h2 className={`${styles.light} ${styles.contactTitle}`}>Contact</h2>
       <Contact />
-    </>
+    </div>
   )
 }
