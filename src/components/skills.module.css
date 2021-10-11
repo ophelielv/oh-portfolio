@@ -13,7 +13,7 @@ p.skill:hover{
 }
 
 div.category {
-  max-width: 30%;
+  max-width: 30%; 
 }
 
 div.category h3 {
@@ -38,6 +38,7 @@ div.list {
     margin: 0.2rem 0.4rem 0.2rem 0;
     font-size: 0.7rem;
   }
+
   div.category h3 {
     font-size: 0.8rem;
     margin: 0.5rem 0;

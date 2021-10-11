@@ -35,7 +35,9 @@
 @media (max-width: 600px) {
   .container button {
     font-size: 0.9rem;
-  }
+    text-shadow: none;
+  } 
+    
   .container {
     padding: 1rem 2rem;
     align-self: center;

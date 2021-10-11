@@ -1,16 +1,18 @@
 h2.contactTitle {
   text-shadow: -20px -15px 3px #0c0c0cc2;
 }
-div.row {
-  display: flex;
-  justify-content: space-evenly;
-}
 
 .koalaImgContainer {
   transform: rotateX(180deg) rotateY(0deg); 
   position: absolute;
   top: 100px;
   left: 30px;
+}
+
+p.description {
+  max-width: 900px;
+  text-align: center;
+  line-height: 1.6rem;
 }
 
 .koalaImgContainer:before {

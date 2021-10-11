@@ -1,14 +1,46 @@
-div.skills h2 {
+div.skillsContainer h2 {
   text-align: center;
 }
 
-div.skills {
+div.skillsContainer {
   z-index: 2;
-  padding: 2rem 4rem;
+  padding: 2rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+p.description {
+  max-width: 900px;
+  text-align: left;
+  line-height: 1.6rem;
+}
+
+div.row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .dark { color: black; }
+
+
+@media (max-width: 600px) {  
+  div.row {
+    flex-direction: column;
+  }
+
+  div.skillsContainer {
+    padding: 0rem 0.5rem;
+  }
+
+  div.skillsContainer h2 {
+    padding: 0.4rem;
+    margin: 0;
+  }
+  
+  p.description {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+}

@@ -4,26 +4,25 @@ import Core from '../components/core'
 import { useTranslation } from 'react-i18next'
 
 const frontSkills = [ 
-  'Javascript (ES5+)', 'React', 'React Native', 'SQL', 
-  'HTML5', 'CSS3', 'Mocha', 'Chai', 'Next.js', 'react-spring',
-  'Webpack', 'Yarn',
+  'React', 'Javascript (ES5+)', 'Typescript', 'react-spring',
+  'Angular', 'AngularJS', 'jQuery', 'Jasmine', 'Jest', 'HTML5',
+  'CSS3', 'Animation', 'SASS', 'Webpack', 'Yarn', 'Grunt', 'Npm'
 ]
 const backSkils = [
-  'Symfony', 'Php', 'Node.js', 'Express.js', 'Firebase', 
-  'Symfony', 'Php', 'Node.js', 'Express.js', 'Firebase'
+  'PHP', 'Symfony', 'Doctrine', 'PHPUnit', 'Twig', 'Node.js',
+  'Express.js', 'Sqlite', 'Oracle', 'MySQL', 'Firebase'
+
 ]
 const otherSkills = [
-  'Git', 'Jira', 'Git',
-  'Jira', 'Git'
+  'React Native', 'Ionic', 'Android studio', 'Git', 'Jira'
 ]
-
 
 export default function SkillsSection () {
   const { t } = useTranslation()
   return (
     <>
       <Core />
-        <div className={styles.skills}>
+        <div className={styles.skillsContainer}>
           <h2 className={styles.dark}>{t('skills.skills')}</h2>
           <p className={`${styles.dark} ${styles.description}`}>
             {t('skills.description')}
