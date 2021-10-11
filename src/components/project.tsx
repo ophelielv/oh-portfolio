@@ -27,11 +27,13 @@ export default function Project({
         />
       </div>
 
-      <div className={styles.texts}>
-        <h3>{title}</h3>
-        <p>{description}</p>
-        <a href="" target="_blank" className={styles.link}>{t('projects.buttonSee')}</a>
-      </div>
+      <h3>{title}</h3>
+      <p>
+        {description}
+        <a href="" target="_blank" className={styles.link}>
+          {t('projects.buttonSee')}
+        </a>
+      </p>
 
     </div>
   )

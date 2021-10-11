@@ -1,52 +1,58 @@
 div.container {
-  display: grid;
   padding: 2rem 2rem;
-  display: flex;
   color: white;
-  justify-content: center;
-  align-items: center;
-  max-width: 900px;
+  max-width: 1200px;
   border-radius: 4px;
   transition: background-color 0.4s, border 0.4s;
   padding: 1rem 2rem;
   margin: 0 0 1rem 0rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 0.5rem; 
+ }
+
+div.container h3 {
+  grid-column-start: 2;
+  grid-column-end: 4; 
+  align-self: flex-end;
+}
+
+div.container p {
+  grid-column-start: 2;
+  grid-column-end: 4; 
 }
 
 div.imgContainer {
   position: relative;
-  min-height: 250px;
-  min-width: 250px;
+  min-height: 200px;
+  min-width: 200px;
   width: 20vw;
   height: 20vw;
   max-height: 300px;
   margin-right: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 4px;
   transition: border 0.4s;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2; 
 }
 
 div.imgContainer img {
   border-radius: 4px;
 }
 
-div.texts {
-  display: flex;
-  flex-direction: column;
-  font-size: 0.9rem;
-}
-
 a.link {
   background-color: rgba(51, 51, 51, 0.664);
   border: 1px solid rgba(255, 255, 255, 0.555);
-  padding: 0.2rem 1.2rem;
+  padding: 0.05rem 1.2rem;
   border-radius: 20px;
   color: white;
   z-index: 2;
   font-size: 1rem;
   width: fit-content;
   transition: background-color 0.4s;
+  margin-left: 0.8rem; 
 }
 
 a.link:hover, a.link:focus, a.link:active {
@@ -59,5 +65,44 @@ div.container:hover div.imgContainer {
 }
 
 div.container:hover {
-  background-color:rgba(219, 219, 219, 0.144)
+  background-color:rgba(219, 219, 219, 0.144);
+}
+
+@media (max-width: 800px) {
+  div.container {
+    background-color:rgba(219, 219, 219, 0.144);
+    border: solid 2px #f7f7f74a;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    column-gap: 0.4rem; 
+    padding: 0.5rem 1rem;
+  }
+  
+  div.container h3 {
+    justify-self: flex-start;
+    align-self: flex-end;
+    font-size: 1.3rem;
+    margin: 0;
+  }
+  
+  div.container p {
+    grid-column-start: 1;
+    grid-column-end: 3; 
+    font-size: 0.8rem;
+  } 
+
+  div.container a {
+    font-size: 0.9rem;
+  }
+  
+  div.imgContainer {
+    min-height: 100px;
+    min-width: 150px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2; 
+    padding: 0;
+    margin: 0;
+  }
 }

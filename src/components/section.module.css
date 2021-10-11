@@ -6,7 +6,6 @@ section.section {
   position: relative;
   display: flex;
   align-items: center;
-  overflow-y: scroll;
 }
 
 
@@ -24,7 +23,7 @@ section.section {
 .content.center { justify-content: center; }
 .content.start { justify-content: flex-start; }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .content {
     padding: 1rem 1.1rem;
   }

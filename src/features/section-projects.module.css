@@ -1,1 +1,23 @@
-.light { color: white; }
+.light { 
+  color: white; 
+}
+
+div.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
+div.projets {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 600px) {  
+  div.container h2 {
+    padding: 0.2rem;
+    margin: 0;
+  }
+}
