@@ -10,9 +10,9 @@ export interface MessageItf {
 
 export const writeContactMessage = async (data: MessageItf) => {
   const db = firebase.firestore()
-//   await db.collection(`contacts`)
-//   .doc().set({
-//     ...data,
-//     timeStamp: firebase.firestore.Timestamp.fromDate(new Date())
-//   })
+  await db.collection(`contacts`)
+  .doc().set({
+    ...data,
+    timeStamp: firebase.firestore.Timestamp.fromDate(new Date())
+  })
 }

@@ -7,6 +7,9 @@ import PresentationSection from '../src/features/section-presentation'
 import SkillsSection from '../src/features/section-skills'
 import ProjectsSection from '../src/features/section-projects'
 import ContactSection from '../src/features/section-contact'
+import initFirebase from '../src/firebase/initFirebase'
+
+initFirebase()
 
 const Home: NextPage = () => {
   const { t } = useTranslation()

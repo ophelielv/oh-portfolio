@@ -88,11 +88,11 @@ p.messageSuccess, p.messageError {
 }
 
 p.messageSuccess {
-  color: rgb(0, 145, 12);
+  color: #84ee8d;
 }
 
 p.messageError {
-  color: #750000;
+  color: #fcc5c5;
 }
 
 @media (max-width: 900px) {

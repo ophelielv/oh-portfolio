@@ -25,7 +25,7 @@ export default function Contact(){
     try {
       await writeContactMessage(data)
       setIsSent(true)
-    } catch(error){
+    } catch(error) {
       setSendingInError(true)
     }
   }
