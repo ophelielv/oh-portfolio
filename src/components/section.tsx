@@ -6,7 +6,6 @@ export default function Section({
   backgroundAlt,
   position,
   children,
-
 }:{
   backgroundName: string,
   backgroundAlt: string,

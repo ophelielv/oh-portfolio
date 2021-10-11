@@ -12,10 +12,6 @@ p.skill:hover{
   color: rgb(214, 73, 8);
 }
 
-div.category {
-  max-width: 30%; 
-}
-
 div.category h3 {
   font-size: 1.4rem;
   margin: 0.5rem 0;
