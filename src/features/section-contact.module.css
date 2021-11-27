@@ -12,7 +12,7 @@ h2.contactTitle {
 .koalaImgContainer {
   transform: rotateX(180deg) rotateY(0deg); 
   position: absolute;
-  top: 100px;
+  top: 188px;
   left: 30px;
 }
 
@@ -24,12 +24,12 @@ p.description {
 
 .koalaImgContainer:before {
   content: '';
-  height: 15px;
+  height: 6px;
   width: 115px;
   background-color: #000000a1;
   border-radius: 25px;
   position: absolute;
-  bottom: 32px;
+  bottom: 40px;
   right: 49px;
   transform: skew(18deg, 0deg);
   box-shadow: -6px 0px 10px 16px #000000a1;
