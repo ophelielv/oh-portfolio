@@ -7,7 +7,11 @@ const LIGHTBLUE = '#95f1ff'
 const GOLD = '#ffe739'
 const BLUEGREEN = '#06745b'
 
-export default function TitleAnimation() {
+export default function TitleAnimation({ text_frontend, text_fullstack, text_job}:{
+  text_frontend: string,
+  text_fullstack: string,
+  text_job: string,
+}) {
   const ref = useRef<ReturnType<typeof setTimeout>[]>([])
   const [items, set] = useState<string[]>([])
   const transitions = useTransition(items, {
@@ -27,25 +31,25 @@ export default function TitleAnimation() {
     update: { color: WHITE },
   })
 
-  const name = "Ophélie Le Vigouroux"
-  const frontTechno = "Front-end"
-  const fullTechno = "Full-stack"
-  const job = "Developer"
+  
+  const reset = useCallback((job, frontend, fullstack) => {
+    const name = "Ophélie Le Vigouroux"
+    const [frontend1, frontend2]= frontend.split(' ')
+    const [fullstack1, fullstack2]= fullstack.split(' ')
 
-  const reset = useCallback(() => {
     ref.current.forEach(clearTimeout)
     ref.current = []
     set([])
-    ref.current.push(setTimeout(() => set([name, frontTechno, job]), 2000))
+    ref.current.push(setTimeout(() => set([name, frontend1, frontend2]), 2000))
     ref.current.push(setTimeout(() => set([name, job]), 5000))
-    ref.current.push(setTimeout(() => set([name, fullTechno, job]), 3000))
-    ref.current.push(setTimeout(() => set([name, frontTechno, job]), 8000))
+    ref.current.push(setTimeout(() => set([name, fullstack1, fullstack2]), 3000))
+    ref.current.push(setTimeout(() => set([name, frontend1, frontend2]), 8000))
   }, [])
 
   useEffect(() => {
-    reset()
+    reset(text_job, text_frontend, text_fullstack)
     return () => ref.current.forEach(clearTimeout)
-  }, [])
+  }, [reset, text_job, text_frontend, text_fullstack])
 
   return (
     <div className={styles.container}>
@@ -54,7 +58,7 @@ export default function TitleAnimation() {
           <animated.div 
             className={styles.transitionsItem} 
             style={rest} 
-            onClick={reset}
+            onClick={() => reset(text_job, text_frontend, text_fullstack)}
           >
             <animated.div style={{ overflow: 'hidden', height: innerHeight }}>
               {item}

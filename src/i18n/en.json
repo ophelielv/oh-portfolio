@@ -1,5 +1,8 @@
 {
   "presentation": {
+    "frontend": "Front-end Developer",
+    "fullstack": "Full-stack Developer",
+    "job": "Developer"
   },
 
   "about": {

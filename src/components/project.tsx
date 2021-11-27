@@ -7,16 +7,17 @@ export default function Project({
   description,
   imgName,
   imgAlt,
+  link,
 }:{
   title: string,
   description: string,
   imgName: string,
   imgAlt: string,
+  link: string,
 }){
   const { t } = useTranslation()
   return (
     <div className={styles.container}>
-
       <div className={styles.imgContainer}>
         <Image 
           src={`/projects/${imgName}`}
@@ -30,7 +31,7 @@ export default function Project({
       <h3>{title}</h3>
       <p>
         {description}
-        <a href="" target="_blank" className={styles.link}>
+        <a href={link} target="_blank" rel="noreferrer" className={styles.link}>
           {t('projects.buttonSee')}
         </a>
       </p>

@@ -9,6 +9,8 @@ div.container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 0.5rem; 
+  justify-content: center;
+  align-items: center;
  }
 
 div.container h3 {

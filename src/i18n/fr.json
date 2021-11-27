@@ -1,6 +1,8 @@
 {
   "presentation": {
-   
+    "frontend": "Développeuse Front-end",
+    "fullstack": "Développeuse Full-stack",
+    "job": "Développeuse"
   },
 
   "about": {

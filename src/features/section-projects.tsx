@@ -13,12 +13,14 @@ export default function ProjectsSection () {
           description={t('projects.p1.description')}
           imgName="hamilton-street.JPG"
           imgAlt={t('projects.p1.imgAlt')}
+          link={'https://cssart-hamiltonstreet.web.app/'}
         />
         <Project 
           title={t('projects.p2.title')}
           description={t('projects.p2.description')}
           imgName="koala's-notebook.JPG"
           imgAlt={t('projects.p2.imgAlt')}
+          link={'https://koalas-notebook.vercel.app/'}
         />
       </div>
     </div>

@@ -5,7 +5,7 @@ h1.hiddenTitle {
 .presentationContainer {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-end;
   position: absolute;
   bottom: 0;
@@ -21,6 +21,30 @@ h1.hiddenTitle {
   margin-bottom: 40px;
 }
 
+.presentationContainer .foxImgContainer {
+  position: absolute;
+  height: 8rem;
+  max-height: 100px;
+  width: 8rem;
+  max-width: 125px;
+  z-index: 2;
+  bottom: 1rem;
+  left: 45vw;
+}
+
+.presentationContainer .foxImgContainer:before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  height: 0.4rem;
+  left: 15px;
+  width: 5rem;
+  background-color: #000000a1;
+  border-radius: 20px;
+  -webkit-box-shadow: -6px 0px 10px 16px #000000a1;
+  box-shadow: -2px -2px 10px 8px #000000a1;
+}
+
 @media (max-width: 600px) {
   .presentationContainer {
     flex-direction: column;
@@ -30,5 +54,9 @@ h1.hiddenTitle {
   .presentationContainer .treeImgContainer {
     margin-bottom: 0px;
     bottom: 0;
+  }
+
+  .presentationContainer .foxImgContainer {
+    bottom: 2rem;
   }
 }
