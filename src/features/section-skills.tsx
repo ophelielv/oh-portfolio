@@ -4,14 +4,14 @@ import Core from '../components/core'
 import { useTranslation } from 'react-i18next'
 
 const frontSkills = [ 
-  'React', 'Javascript (ES5+)', 'Typescript', 'react-spring',
-  'Angular', 'AngularJS', 'jQuery', 'Jasmine', 'Jest', 'HTML5',
-  'CSS3', 'Animation', 'SASS', 'Webpack', 'Yarn', 'Grunt', 'Npm'
+  'React', 'Javascript (ES5+)', 'Typescript', 'Next.js', 'react-spring', 
+  'Redux', 'Angular', 'AngularJS', 'jQuery', 'Jasmine', 'Jest', 'HTML5',
+  'CSS3', 'Animation', 'LESS', 'SASS', 'Webpack', 'Yarn', 'Npm'
 ]
 const backSkils = [
-  'PHP', 'Symfony', 'Doctrine', 'PHPUnit', 'Twig', 'Node.js',
-  'Express.js', 'Sqlite', 'Oracle', 'MySQL', 'Firebase'
-
+  'Node.js', 'Express.js', 'Sqlite', 'Firebase',
+  'PHP', 'Symfony', 'Doctrine', 'PHPUnit', 'Twig',
+  'Oracle', 'MySQL'
 ]
 const otherSkills = [
   'React Native', 'Ionic', 'Android studio', 'Git', 'Jira'
