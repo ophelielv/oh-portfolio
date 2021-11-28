@@ -3,20 +3,20 @@ a.icon {
   margin-right: 1rem;
   background-color: transparent; 
   border-radius: 60px;
-  
   padding: 0.4rem;
-  transition: background-color 0.4s, box-shadow 0.4s;
+  transition: background-color 0.7s, box-shadow 0.7s;
 }
 
 a.icon:hover,
 a.icon:focus,
 a.icon:active{
   background-color: #1f1f1f7e; 
-  /* box-shadow: 1px 1px 17px 8px #4747477e; */
+  box-shadow: 1px 1px 17px 8px #4747477e; 
 }
 
 /* *** Icons *** */
 .container {
+  margin-top: 2rem;
   padding: auto;
   display: flex;
   margin-right: 1rem;

@@ -32,7 +32,7 @@ export default function Project({
       <p>
         {description}
         <a href={link} target="_blank" rel="noreferrer" className={styles.link}>
-          {t('projects.buttonSee')}
+          {t('projects.buttonOpen')}
         </a>
       </p>
 
