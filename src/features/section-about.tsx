@@ -4,12 +4,16 @@ import Icons from '../components/icons'
 
 export default function AboutSection () {
   const { t } = useTranslation()
+  const texts = t('about.description').split('<br />')
+
   return (
     <div className={styles.container}>
       <h2 className={styles.light}>{t('about.about')}</h2>
-      <p className={`${styles.light} ${styles.description}`}>
-        {t('about.description')}
-      </p>
+      {texts.map((text, index) => (
+        <p className={`${styles.light} ${styles.description}`} key={index}>
+          {text}
+        </p>
+      ))}
 
       <Icons />
     </div>

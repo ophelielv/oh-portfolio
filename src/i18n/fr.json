@@ -7,12 +7,12 @@
 
   "about": {
     "about": "À propos",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec mauris porta, elementum elit vel, porttitor velit. Nulla porttitor, sapien at egestas dictum, lorem metus pharetra mi, sed euismod turpis felis vitae nisi. In euismod, mauris vel faucibus facilisis, magna dui sollicitudin tortor."
+    "description": "Je suis une développeuse Front-end habitant en Provence.<br />Au cours des cinq dernières années, j'ai expérimenté l'effervescence en start-up, la collaboration en grande entreprise et différents rôles : développeuse, scrum master, MOA, testeuse QA. Passionnée par le web et le développement, j'accorde un soin particulier à l'expérience utilisateur, l'accessibilité ainsi qu'à la qualité et la maintenabilité du code.<br />Aujourd'hui, je continue ma progression en m'orientant de plus en plus vers le Front-end."
   },
 
   "skills": {
     "skills": "Compétences",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec mauris porta, elementum elit vel, porttitor velit. Nulla porttitor, sapien at egestas dictum, lorem metus pharetra mi, sed euismod turpis felis vitae nisi. In euismod, mauris vel faucibus facilisis, magna dui sollicitudin tortor.",
+    "description": "J'ai commencé le développement avec PHP, Symfony avec jQuery puis Angular en Front. J'ai réalisé des projets web et mobile. Le Javascript a pris de plus en plus de place. Maintenant je travaille principalement avec React.js et son écosystème.",
     "title": {
       "front": "Front-end",
       "back": "Back-end",
@@ -22,22 +22,21 @@
 
   "projects": {
     "projects": "Projets",
-    "buttonSee": "Voir",
+    "buttonOpen": "Ouvrir",
     "p1": {
-      "title": "CSS Art",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec mauris porta, elementum elit vel, porttitor velit. Nulla porttitor, sapien at egestas dictum, lorem metus pharetra mi, sed euismod turpis felis vitae nisi. In euismod, mauris vel faucibus facilisis, magna dui sollicitudin tortor.",
+      "title": "Art CSS",
+      "description": "Dessin réalisé en HTML et CSS uniquement. Il n'y a pas de SVG, seulement des <div> stylisées. Les animations sont réalisées avec des keyframes CSS. Tout écrit directement à la main. Ce dessin est fait principalement pour Chrome.",
       "imgAlt": "Hamilton street"
     },
     "p2": {
-      "title": "Web app",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec mauris porta, elementum elit vel, porttitor velit. Nulla porttitor, sapien at egestas dictum, lorem metus pharetra mi, sed euismod turpis felis vitae nisi. In euismod, mauris vel faucibus facilisis, magna dui sollicitudin tortor.",
+      "title": "Application web",
+      "description": "Il s'agit d'un journal pour suivre l'activité de ses animaux de compagnie. Après avoir créé un compte, l'utilisateur pourra ajouter son animal et commencer à enregistrer ses activités quotidiennes. Les autres fonctionnalités sont : agenda, rendez-vous médicaux, liste des apprentissages, affichage d'un souvenir aléatoire, version publique des pages. Réalisé avec Next.js, React.js et Firebase.",
       "imgAlt": "Koala's notebook"
     }
   },
 
   "contact": {
     "contact": "Contact",
-    "description":"Vous pouvez me contacter de préférence pour des opportunités en freelance. Pour toute autre question, n'hésitez pas.",
     "form": {
       "name": "Nom",
       "email": "Email",

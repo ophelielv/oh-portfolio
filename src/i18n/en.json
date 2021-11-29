@@ -7,12 +7,12 @@
 
   "about": {
     "about": "About",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec mauris porta, elementum elit vel, porttitor velit. Nulla porttitor, sapien at egestas dictum, lorem metus pharetra mi, sed euismod turpis felis vitae nisi. In euismod, mauris vel faucibus facilisis, magna dui sollicitudin tortor."
+    "description": "I am a Front-end developer living in Provence.<br />During the last five years, I've experimented start-ups' effervescence, collaboration with and in big companies also as various roles: developer, scrum master, project owner, QA tester. Passionate about web and development, I give a special care to user experience, to accessibility and as well as code maintainability and quality.<br />Today, I continue to progress as I orient always more myself toward Front-end."
   },
 
   "skills": {
     "skills": "Skills",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec mauris porta, elementum elit vel, porttitor velit. Nulla porttitor, sapien at egestas dictum, lorem metus pharetra mi, sed euismod turpis felis vitae nisi. In euismod, mauris vel faucibus facilisis, magna dui sollicitudin tortor.",
+    "description": "I've started development with PHP, Symfony with jQuery then Angular in Front. I've completed web and mobile projects. Javascript took up more and more space. And now i work mostly with React.js and its ecosystem.",
     "title": {
       "front": "Front-end",
       "back": "Back-end",
@@ -22,22 +22,20 @@
 
   "projects": {
     "projects": "Projects",
-    "buttonSee": "See",
+    "buttonOpen": "Open",
     "p1": {
       "title": "CSS Art",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec mauris porta, elementum elit vel, porttitor velit. Nulla porttitor, sapien at egestas dictum, lorem metus pharetra mi, sed euismod turpis felis vitae nisi. In euismod, mauris vel faucibus facilisis, magna dui sollicitudin tortor.",
-      "imgAlt": "Hamilton street"
+      "description": "This drawing have been realised in HTML and CSS only. There is no SVG only stylised <div>. The animation have been realised with CSS' keyframes. Everything have been manually written. This drawing have mainly been made for Google Chrome."
     },
     "p2": {
-      "title": "Web app",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec mauris porta, elementum elit vel, porttitor velit. Nulla porttitor, sapien at egestas dictum, lorem metus pharetra mi, sed euismod turpis felis vitae nisi. In euismod, mauris vel faucibus facilisis, magna dui sollicitudin tortor.",
+      "title": "Web application",
+      "description": "This is a diary to follow the activity of your pet. After the account have been created, the user will be able to add it's pet then start to add his daily activities. The other functions are : agenda, medical appointment, list of training. The display of a random memory and the possibility to show a public version of the pages. It have been realised with Next.js, React.js and Firebase.",
       "imgAlt": "Koala's notebook"
     }
   },
 
   "contact": {
     "contact": "Contact",
-    "description":"You can contact me for freelance opportunities. Other questions, don’t hesitate.",
     "form": {
       "name": "Name",
       "email": "Email",

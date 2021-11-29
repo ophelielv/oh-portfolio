@@ -22,7 +22,7 @@ export default function PresentationSection () {
       <ChooseLanguage />
         <div className={styles.foxImgContainer}>
           <Image 
-            src="/images/fox.png" 
+            src="/images/fox.svg" 
             layout="fill"
             objectFit="cover"
             objectPosition="left"

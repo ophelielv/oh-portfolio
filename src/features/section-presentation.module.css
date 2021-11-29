@@ -17,7 +17,7 @@ h1.hiddenTitle {
   height: 75vh;
   max-height: 700px;
   width: 75vw;
-  max-width: 700px;
+  max-width: 750px;
   margin-bottom: 40px;
 }
 
@@ -41,8 +41,7 @@ h1.hiddenTitle {
   width: 5rem;
   background-color: #000000a1;
   border-radius: 20px;
-  -webkit-box-shadow: -6px 0px 10px 16px #000000a1;
-  box-shadow: -2px -2px 10px 8px #000000a1;
+  box-shadow: -3px -3px 8px 6px #000000a1;;
 }
 
 @media (max-width: 600px) {

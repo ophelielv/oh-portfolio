@@ -29,7 +29,7 @@ export default function Project({
       </div>
 
       <h3>{title}</h3>
-      <p>
+      <p className={styles.description}>
         {description}
         <a href={link} target="_blank" rel="noreferrer" className={styles.link}>
           {t('projects.buttonOpen')}

@@ -5,6 +5,9 @@ p.skill {
   border-radius: 2px;
   color: white;
   transition: background-color 0.4s, color 0.4s;
+  font-family: 'Exo', sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
 }
 
 p.skill:hover{
@@ -13,7 +16,6 @@ p.skill:hover{
 }
 
 div.category h3 {
-  font-size: 1.4rem;
   margin: 0.5rem 0;
 }
 

@@ -2,7 +2,6 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Section from '../src/components/section'
 import styles from '../styles/Home.module.css'
-import { useTranslation } from 'react-i18next'
 import PresentationSection from '../src/features/section-presentation'
 import SkillsSection from '../src/features/section-skills'
 import ProjectsSection from '../src/features/section-projects'
@@ -13,7 +12,6 @@ import AboutSection from '../src/features/section-about'
 initFirebase()
 
 const Home: NextPage = () => {
-  const { t } = useTranslation()
   return (
     <div className={styles.container}>
       <Head>
