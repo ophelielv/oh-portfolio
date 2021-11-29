@@ -29,7 +29,7 @@
     },
     "p2": {
       "title": "Web application",
-      "description": "This is a diary to follow the activity of your pet. After the account have been created, the user will be able to add it's pet then start to add his daily activities. The other functions are : agenda, medical appointment, list of training. The display of a random memory and the possibility to show a public version of the pages. It have been realised with Next.js, React.js and Firebase.",
+      "description": "This is a diary to follow the activity of your pet. After the account have been created, the user will be able to add it's pet then start to add his daily activities. The other functions are : agenda, list of training, medical appointment. The display of a random memory and the possibility to show a public version of the pages. It have been realised with Next.js, React.js and Firebase.",
       "imgAlt": "Koala's notebook"
     }
   },
