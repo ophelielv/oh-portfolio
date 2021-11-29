@@ -15,6 +15,9 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Exo:wght@500;600&family=Poppins:wght@700&display=swap" 
             rel="stylesheet" 
           />
+          <meta name="description" content="Ophélie Le Vigouroux, Front-end developer" />
+          <meta name="keywords" content="HTML, CSS, JavaScript, React.js, Next.js, developer, front, end, full, stack, symfony, développeur, développeuse" />
+          <meta name="author" content="Ophélie Le Vigouroux" />
         </Head>
         <body>
           <Main />
