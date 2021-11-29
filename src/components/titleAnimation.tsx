@@ -23,7 +23,7 @@ export default function TitleAnimation({ text_frontend, text_fullstack, text_job
       color: LIGHTBLUE,
     },
     enter: [
-      { opacity: 1, height: 80, innerHeight: 80 },
+      { opacity: 1, height: 75, innerHeight: 75 },
       { transform: 'perspective(600px) rotateX(180deg)', color: GOLD },
       { transform: 'perspective(600px) rotateX(0deg)' },
     ],

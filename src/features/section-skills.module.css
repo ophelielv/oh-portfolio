@@ -9,6 +9,7 @@ div.skillsContainer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 909px;
 }
 
 p.description {
