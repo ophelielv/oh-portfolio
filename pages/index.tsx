@@ -25,6 +25,7 @@ const Home: NextPage = () => {
           backgroundName="wave-1-sky-crust-1.svg" 
           backgroundAlt="Ciel et croûte terrestre"
           position="center"
+          name="topSky"
         >
           <PresentationSection />
         </Section>
@@ -33,6 +34,7 @@ const Home: NextPage = () => {
           backgroundName="wave-2-crust-magma.svg" 
           backgroundAlt="Croûte terrestre et magma"
           position="center"
+          name="topCrust"
         >
           <AboutSection />
         </Section>
@@ -41,6 +43,7 @@ const Home: NextPage = () => {
           backgroundName="wave-3-magma-core-magma.svg" 
           backgroundAlt="Magma, noyau et magma"
           position="center"
+          name="core"
         >  
           <SkillsSection />
         </Section> 
@@ -49,6 +52,7 @@ const Home: NextPage = () => {
           backgroundName="wave-4-magma-crust.svg" 
           backgroundAlt="Magma et croûte terrestre"
           position="start"
+          name="bottomCrust"
         >
           <ProjectsSection />
         </Section>  
@@ -57,6 +61,7 @@ const Home: NextPage = () => {
           backgroundName="wave-5-crust-sky-1.svg" 
           backgroundAlt="Croûte terrestre et ciel"
           position="center"
+          name="bottomSky"
         >  
           <ContactSection />
         </Section> 

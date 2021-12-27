@@ -8,6 +8,36 @@ section.section {
   align-items: center;
 }
 
+.topSky { 
+  background: linear-gradient(
+    #4facf7 60%, #78cc41, #726908, #331c00
+  );
+} 
+.topCrust { 
+  background: linear-gradient(
+    #331c00 5%, #ae0000, #c3291b, #d74232, 
+    #eb5949, #ff6f61
+  );
+} 
+.core { 
+  background: linear-gradient(
+    #ff6f61 5%, #ff9d4c, #ffd13a, #ffe739, 
+    #ffd13a, #ff9d4c
+  );
+} 
+.bottomCrust { 
+  background: linear-gradient(
+    #ff9d4c 5%,#fa7268, #f0655a, #e6584b, 
+    #db4b3d, #d03d2f, #c52e21, #ba1c11, 
+    #ae0000, #331c00 95%
+  );
+} 
+.bottomSky { 
+  background: linear-gradient(
+    #331c00, #726908, #78cc41, #4facf7 50%
+  );
+} 
+
 .content {
   position: absolute;
   display: flex;
